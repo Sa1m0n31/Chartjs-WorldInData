@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.container {
+    background: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin: 5vh;
+    letter-spacing: 2px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.container h2 {
+    color: white;
+    text-align: center;
+    margin: 4vh;
+}
+
+.container .charts {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2, 35vw);
+    grid-template-rows: repeat(3, 60vh);
+    grid-column-gap: 5vw;
+    grid-row-gap: 18vh;
+}
+
+@media(max-width: 900px) {
+    .container .charts {
+        grid-template-columns: 70vw;
+    }
+}
+
+.container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
